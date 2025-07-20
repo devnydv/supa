@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    {{ total_count }}
     <h1>Data from Supabase</h1>
     <ul>
         {% for item in data %}
+        <img width="100" src="{{item.imageUrl}}" alt="">
             <li>{{ item.id }}: {{ item.title }}</li>
             <li>{{ item.content }}</li>
         {% endfor %}
     </ul>
+    
 </body>
 </html>
