@@ -1,5 +1,5 @@
 {
   "name": "supa",
-  "main": "app.py",
+  "main": "/app.py",
   "compatibility_date": "2025-09-30"
 }
