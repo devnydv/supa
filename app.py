@@ -2,7 +2,7 @@
 from flask import Flask, request, jsonify, render_template
 from supabase import create_client, Client
 app = Flask(__name__)
-
+ 
 url: str = "https://ltsuvxczpjfoldcykhop.supabase.co"
 key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx0c3V2eGN6cGpmb2xkY3lraG9wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1Mjk0ODM2MiwiZXhwIjoyMDY4NTI0MzYyfQ.vQjR-vPAW43uW-Cns4HXvOoZhnWVmpkQV-wR6jWEwhs"
 supabase: Client = create_client(url, key)
